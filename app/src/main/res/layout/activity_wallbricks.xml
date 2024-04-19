@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WallbricksActivity">
+
+    <TextView
+        android:id="@+id/header_one"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ПРИЛОЖЕНИЕ\nСТРОИТЕЛЬНЫЙ КАЛЬКУЛЯТОР"
+        android:layout_marginTop="30dp"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#177C3A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header_two"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="top"
+        android:text="Расчет плитки на стену:"
+        android:textColor="#4C9063"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_one" />
+
+    <LinearLayout
+        android:id="@+id/linearEditText"
+        android:layout_width="352dp"
+        android:layout_height="425dp"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_two">
+
+        <EditText
+            android:id="@+id/wallLength"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="14dp"
+            android:background="#B1DFC1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Длина стены (см)"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="#177C3A"
+            android:textColorHint="#177C3A"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/wallWidth"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="14dp"
+            android:background="#B1DFC1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Ширина стены (см)"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="#177C3A"
+            android:textColorHint="#177C3A"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/bricksLength"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="14dp"
+            android:background="#B1DFC1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Длина плитки (см)"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="#177C3A"
+            android:textColorHint="#177C3A"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/bricksWidth"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="14dp"
+            android:background="#B1DFC1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Ширина плитки (см)"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="#177C3A"
+            android:textColorHint="#177C3A"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/cost"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="14dp"
+            android:background="#B1DFC1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Стоимость одной плитки (монет)"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="#177C3A"
+            android:textColorHint="#177C3A"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#177C3A"
+        android:text="Расчёт количества плитки"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
